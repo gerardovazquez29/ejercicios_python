@@ -47,4 +47,4 @@ my_set_diferencia = my_set1.difference(my_set2)
 # 10. Elimina un set llamado my_set usando del y luego intenta imprimirlo para ver el resultado.
 my_set = {1, 2, 3, 4, 5}
 del my_set
-print(my_set)  # Esto generará un error porque my_set ya no existe
+#print(my_set)  # Esto generará un error porque my_set ya no existe

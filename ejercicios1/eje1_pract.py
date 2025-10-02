@@ -2,7 +2,25 @@
 
 """ 1-Escribe es_primo(n) que devuelva True si n es primo; 
 usa un return temprano cuando encuentres un divisor. """
+def es_primo(n):
+    if n < 2:
+        return False
+    for i in range(2,int(n ** 0.5) + 1):
+        """
+        info: n ** 0.5 = Raíz cuadrada de n
 
+                Ejemplo: Si n = 15, entonces 15 ** 0.5 = 3.87...
+                int(n ** 0.5) = Parte entera de la raíz cuadrada
+                Ejemplo: int(3.87) = 3
+                int(n ** 0.5) + 1 = Le suma 1 para incluir ese número en el rango
+                Ejemplo: 3 + 1 = 4
+                range(2, 4) = Genera los números [2, 3] (el 4 no se incluye)
+        """
+        if n % i == 0:
+            return False
+    return True
+print(es_primo(15)) # False
+print(es_primo(17)) # True
 
 # 2-Implementa maximo(*valores) sin usar max() incorporado.
 
