@@ -10,7 +10,7 @@ for pregunta in preguntas:
     if respuesta == 'si':
         calificacion += 1
     elif respuesta == 'no':
-        calificacion == 0
+        calificacion = 0
    
 
 print(f' Tu calificacion es: {calificacion}')

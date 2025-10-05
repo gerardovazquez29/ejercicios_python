@@ -1,6 +1,16 @@
-# 1. Crea una función llamada "personalized_greeting" que reciba un nombre como argumento e imprima "Hola, <nombre>". Si no se proporciona ningún nombre, debe saludar diciendo "Hola, desconocido".
+# 1. Crea una función llamada "personalized_greeting" que reciba un nombre 
+# como argumento e imprima "Hola, <nombre>". Si no se proporciona ningún nombre, 
+# debe saludar diciendo "Hola, desconocido".
+def personalized_greeting(name="desconocido"):
+    return f"Hola {name}"
+saludo = personalized_greeting()
+print(saludo) # Hola desconocido
 
-# 2. Escribe una función llamada "multiply" que reciba dos números como argumentos y retorne el resultado de multiplicarlos.
+# 2. Escribe una función llamada "multiply" que reciba dos números como 
+# argumentos y retorne el resultado de multiplicarlos.
+def multiply(num1,num2):
+    total = num1 * num2
+    return f""
 
 # 3. Crea una función llamada "is_even" que reciba un número entero como argumento y retorne True si es par y False si es impar.
 
