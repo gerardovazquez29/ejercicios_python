@@ -1,10 +1,39 @@
 # 1. Escribe un programa que verifique si un número es positivo, negativo o cero.
+num = int(input('Ingresa un numero: '))
+if num > 0:
+    print('El numero es positivo')
+elif num == 0:
+    print('El numero es cero')
+else:
+    print('El numero es negativo')
 
-# 2. Solicita al usuario que ingrese su edad y muestra un mensaje indicando si es mayor de edad(18 años o más) o menor de edad.
+# 2. Solicita al usuario que ingrese su edad y muestra un mensaje 
+# indicando si es mayor de edad(18 años o más) o menor de edad.
+edad = int(input('Ingresa tu edad: '))
+if edad >= 18:
+    print('Eres mayor de edad')
+else:
+    print('Eres menor de edad')
 
-# 3. Escribe un programa que verifique si una cadena de texto está vacía y muestre un mensaje en consecuencia.
+# 3. Escribe un programa que verifique si una cadena de texto 
+# está vacía y muestre un mensaje en consecuencia.
+texto = ' '
+if len(texto) == len(''):
+    print('Tu texto esta vacio')
+else:
+    print('Tu texto contiene letras')
 
-# 4. Crea un programa que solicite dos números al usuario y compare cuál es mayor. Si son iguales, muestra un mensaje indicando la igualdad.
+# 4. Crea un programa que solicite dos números al usuario y compare 
+# cuál es mayor. Si son iguales, muestra un mensaje indicando la igualdad.
+print('Ingresa dos numeros porfavor ')
+num1 = int(input('Ingresa el primer numero: '))
+num2 = int(input('Ingresa el segundo numero: '))
+if num1 > num2:
+    print(f'El {num1} es mayor')
+elif num1 == num2:
+    print(f'El {num1} y {num2} son iguales')
+else:
+    print(f'El {num2} es mayor')
 
 # 5. Escribe un programa que verifique si un número es divisible por 3 y por 5 al mismo tiempo.
 
