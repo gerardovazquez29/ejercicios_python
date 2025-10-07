@@ -45,9 +45,21 @@ def generate_full_greeting(**kgars):
 print(generate_full_greeting(nombre="Gerardo", apellido="Vazquez"))
 # Hola Gerardo Vazquez
 
-# 7. Crea una función llamada "power" que reciba dos números: base y exponente, y retorne el resultado de elevar la base al exponente.
+# 7. Crea una función llamada "power" que reciba dos números: 
+# base y exponente, y retorne el resultado de elevar la base al exponente.
+def power(base, exponente):
+    if exponente == 0:
+        print('el exponente debe ser mayor a cero')
+        return None
+    return base ** exponente
+print(power(5,6)) # 15625
 
-# 8. Escribe una función llamada "calculate_average" que reciba tres números y retorne su promedio.
+# 8. Escribe una función llamada "calculate_average" que reciba 
+# tres números y retorne su promedio.
+def calculate_average(*args):
+    total = sum(args) / 3
+    return total
+print(calculate_average(4,8,9)) # 7.0
 
 # 9. Crea una función llamada "count_characters" que reciba una cadena de texto y retorne el número de caracteres que contiene.
 
