@@ -33,13 +33,33 @@ if num1 > num2:
 elif num1 == num2:
     print(f'El {num1} y {num2} son iguales')
 else:
-    print(f'El {num2} es mayor')
+    print(f'El {num2} es0 mayor')
 
-# 5. Escribe un programa que verifique si un número es divisible por 3 y por 5 al mismo tiempo.
+# 5. Escribe un programa que verifique si un número es divisible 
+# por 3 y por 5 al mismo tiempo.
+num = int(input('Ingresa un numero para saber si  es divisible: '))
+if num % 3 == 0 and num % 5 == 0:
+    print( f'El munero {num} es divisible por 3 y 5')
+else: 
+    print(f'El numero {num} no es divisible')
 
 # 6. Solicita al usuario que ingrese un número y verifica si es par o impar.
+par_o_impar = int(input('Ingresa un numero para saber si es par o impar: '))
+if par_o_impar % 2 == 0:
+    print(f'El numero {par_o_impar} es par')
+else:
+    print(f'El numero {par_o_impar} es impar')
 
-# 7. Escribe un programa que determine si una persona puede votar en función de su edad(mayor o igual a 18). Si tiene 16 o 17 años, indica que puede votar con permiso especial.
+# 7. Escribe un programa que determine si una persona puede votar 
+# en función de su edad(mayor o igual a 18). 
+# Si tiene 16 o 17 años, indica que puede votar con permiso especial.
+votar = int(input('Ingresa tu edad para saber si puedes votar: '))
+if votar >= 18:
+    print('Puedes votar')
+elif votar == 16 or votar == 17:
+    print('puedes votar con permiso especial')
+else:
+    print('Nopuedes votar')
 
 # 8. Crea un programa que solicite una contraseña al usuario y verifique si coincide con una contraseña predefinida. Si no coincide, muestra un mensaje de error.
 
