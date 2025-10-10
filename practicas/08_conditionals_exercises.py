@@ -61,8 +61,31 @@ elif votar == 16 or votar == 17:
 else:
     print('Nopuedes votar')
 
-# 8. Crea un programa que solicite una contraseña al usuario y verifique si coincide con una contraseña predefinida. Si no coincide, muestra un mensaje de error.
+# 8. Crea un programa que solicite una contraseña al usuario y 
+# verifique si coincide con una contraseña predefinida. 
+# Si no coincide, muestra un mensaje de error.
+contraseña = input('Ingresa tu contraseña: ')
+if contraseña == 'Gato126':
+    print('acceso concedido')
+else:
+    print('Ingrese su contraseña real')
 
-# 9. Escribe un programa que determine si un número está entre 10 y 20 (ambos incluidos).
 
-# 10. Escribe un programa que simule un semáforo: solicita al usuario que ingrese un color(rojo, amarillo, verde) y muestra un mensaje indicando si debe detenerse, estar alerta o avanzar.
+# 9. Escribe un programa que determine si un número está entre 10 y 20 
+# (ambos incluidos).
+numero = 15
+if numero >= 10 and numero <= 20:
+    print(f'El numero {numero} esta en el rango de entre el 10 y 20')
+
+# 10. Escribe un programa que simule un semáforo: solicita al usuario que 
+# ingrese un color(rojo, amarillo, verde) y muestra un mensaje 
+# indicando si debe detenerse, estar alerta o avanzar.
+print('Ingresa uno de estos tres colores: rojo, amarillo, verde ')
+semaforo = input('Ingresa el color que desees: ').lower()
+if semaforo == 'rojo':
+    print('Detengase')
+elif semaforo == 'amarillo':
+    print('Este alerta')
+else:
+    print('Avance')
+
