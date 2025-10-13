@@ -68,4 +68,13 @@ def count_characters(texto):
 resultado = count_characters('python es genial e interesante')
 print(resultado)  # 30  
 
-# 10. Escribe una función llamada "display_messages" que reciba un número indefinido de cadenas y las imprima en mayúsculas, una por una, tal como se hizo en el archivo proporcionado.
+# 10. Escribe una función llamada "display_messages" que reciba 
+# un número indefinido de cadenas y las imprima en mayúsculas, 
+# una por una, tal como se hizo en el archivo proporcionado.
+def display_messages(*messages):
+    for message in messages:
+        print(message.upper())
+    return message
+mensage = display_messages('hola','cadena','chingon','roto')
+print(mensage)
+""" HOLA, CADENA, CHINGON,ROTO """
