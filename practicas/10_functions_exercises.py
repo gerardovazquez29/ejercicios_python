@@ -61,6 +61,11 @@ def calculate_average(*args):
     return total
 print(calculate_average(4,8,9)) # 7.0
 
-# 9. Crea una función llamada "count_characters" que reciba una cadena de texto y retorne el número de caracteres que contiene.
+# 9. Crea una función llamada "count_characters" que reciba una 
+# cadena de texto y retorne el número de caracteres que contiene.
+def count_characters(texto):
+    return len(texto)
+resultado = count_characters('python es genial e interesante')
+print(resultado)  # 30  
 
 # 10. Escribe una función llamada "display_messages" que reciba un número indefinido de cadenas y las imprima en mayúsculas, una por una, tal como se hizo en el archivo proporcionado.
